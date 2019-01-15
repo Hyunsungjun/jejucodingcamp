@@ -9,6 +9,8 @@
 	padding: 0;
 }
 body {
+	display: flex;
+	justify-content: center;
 	background-color: #ddd;
 }
 #page-container {
@@ -19,22 +21,28 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
 }
 #page-container > * {
-	padding: 0 20px;
+	padding: 20px;
 }
 header.global {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
 	height: 100px;
 }
 #logo {
 	
 }
 nav.global > ul {
+	display: flex;
 	
 }
 nav.global > ul > li {
+	flex: 1;
 	list-style: none;
 	border: 1px solid #000;
 	background-color: #666;
 	min-width: 100px;
+	transition: 0.5s
 }
 nav.global > ul > li:hover {
 	min-width: 300px;
@@ -50,7 +58,8 @@ article {
 	padding: 20px 0;
 }
 .secondary {
-	
+	display: flex;
+	justify-content: space-between;
 }
 .secondary aside {
 	width: 270px;

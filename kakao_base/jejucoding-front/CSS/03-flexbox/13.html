@@ -9,6 +9,7 @@
 /* 부모 */
 div {
 	display: flex;
+	/* flex-direction: column; */
 }
 
 /* 자식 */
@@ -16,9 +17,9 @@ section {
 	flex: 1 1 auto;
 	padding: 0;
 }
-section:nth-child(1) {  }
-section:nth-child(2) {  }
-section:nth-child(3) {  }
+section:nth-child(1) { order: 2; }
+section:nth-child(2) { order: 3; }
+section:nth-child(3) { order: 1; }
 </style>
 </head>
 <body>
