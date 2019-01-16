@@ -12,7 +12,7 @@ body, input, button {
 	width: 100px;
 	height: 100px;
 	background-color: red;
-	transition: 0.5s
+	transition: 0.5
 }
 </style>
 <script>
@@ -29,9 +29,11 @@ body, input, button {
 <body>
 <button id="btn">눌러보세요</button>
 <div id="box"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
-var btn = document.querySelector('#btn');
-var box = document.querySelector('#box');
+	// jquery $
+var btn = $('#btn');
+var box = $('#box');
 function btnClickHandler(){
 	box.style.width = '1000px';
 }
@@ -45,7 +47,7 @@ btn.addEventListener('click',btnClickHandler);
 
 
 
-
+<!-- jquery https://developers.google.com/speed/libraries/#jquery -->
 
 
 

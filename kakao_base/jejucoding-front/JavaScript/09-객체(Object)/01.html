@@ -6,6 +6,51 @@
 <script>
 // 객체: 속성(property)와 메소드(method)를 가지고 있는 집합체.
 
+var person1 = {}; //객체 생성 완료 
+person1.username = '사미자';
+person1.age=18;
+
+
+// var person2 = {
+//     username:'제니',
+//     age: 50,
+//     introduce: function(){
+//         console.log("안녕 나는 제니고 50살이야");
+//     }
+// };//이안에는 세미콜론 붙이면 에러 
+// console.log(person2)
+
+// //메소드 
+// person1.introduce = function(){
+//     console.log("안녕 나는 사미자고 18살이야");
+// };
+// person2.introduce()
+
+
+var person2 = {
+    username:'제니',
+    age: 50,
+    introduce: function(){
+        console.log("안녕 나는"+this.username +"고"+this.age+"살이야");
+    }
+};
+person2.introduce();
+
+//생성자 
+
+function Person(username,age){
+    this.username = username;
+    this.age = age;
+    this.introduce = function(){
+        console.log("안녕 나는"+this.username +"고"+this.age+"살이야");
+    };
+}
+
+var p1 = new Person('사미자',24); //instance new를 빼먹으면 안된다 
+var p1 = new Person('유준모',14);
+// console.log(p1)
+p1.introduce();
+p2.introduce();
 
 </script>
 </head>
